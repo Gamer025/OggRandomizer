@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OggRandomizer"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="OGG Randomizer" Height="241.824" Width="584.265"
+		ResizeMode="NoResize">
+	<Grid>
+		<TextBox x:Name="FolderPath_Box" HorizontalAlignment="Left" TextWrapping="NoWrap" Text="Folder" VerticalAlignment="Top" Width="508" Height="30" FontSize="20"  VerticalContentAlignment="Center" IsEnabled="False" Margin="10,49,0,0"/>
+		<Button x:Name="SelectFolder_Button" Content="..." HorizontalAlignment="Left" Margin="536,49,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="SelectFolder_Button_Click"/>
+		<Button x:Name="Randomize_Button" Content="Randomize!" VerticalAlignment="Bottom" HorizontalAlignment="Center"  FontSize="36" FontWeight="Bold" Click="Randomize_Button_Click" Margin="0,0,0,10"  />
+	</Grid>
 </Window>
